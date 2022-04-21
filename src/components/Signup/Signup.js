@@ -13,6 +13,8 @@ const Signup = () => {
 
     const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
 
+    
+
     if(user){
         navigate('/login');
     }
@@ -49,6 +51,11 @@ const Signup = () => {
         setSuccess('Successfully create your account');
         
     }
+
+    // const handleLogin =()=>{
+    //     navigate('/login');
+    // }
+
     return (
         <div className='form-container'>
             <div>
