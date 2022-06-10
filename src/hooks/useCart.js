@@ -3,6 +3,7 @@ import { getStoredCart } from "../utilities/fakedb";
 
 const useCart = (products) => {
     const [cart, setCart] = useState([]);
+    // console.log(products);
 
     useEffect( () =>{
         const storedCart = getStoredCart();
